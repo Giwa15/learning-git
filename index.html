@@ -13,6 +13,7 @@
   <p class="object" id="case1">
   <p class="object" id="case2">
   <p class="object" id="case3">
+  <p class="object" id="case4"> 
 
   <script>
      var car = {
@@ -26,6 +27,12 @@
      document.getElementById("case2").innerHTML = y;
 
 
+    
+
+
+  </script>
+
+  <script>
      var cuboid = {
        length: 15,
        width: 20,
@@ -36,19 +43,19 @@
 
         document.getElementById("case3").innerHTML = volume;
      
+  </script> 
+   <script>
+    function Flight (Id , status){
 
+       this.Id =  Id;
+       this.status = status;
+    }
 
-  </script>
+    var dana = new Flight("23WE", "landed");
+    var arik = new Flight("456RT", "takeoff");
 
-     var cuboid = {
-       length: 15,
-       width: 20,
-        height: 18
-
-        var z  = cuboid.length*cuboid.height*cuboid.width;
-
-        document.getElementById("case3").innerHTML = z;
-     };
-   
+    var response = dana.status; 
+    document.getElementById("case4").innerHTML = "The plane going to Acra has " + response;
+   </script>
 </body>
 </html>
